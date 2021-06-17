@@ -6,7 +6,7 @@ from information import *
 import json
 
 def main():
-  st.sidebar.title("Talk to your data!")
+  st.sidebar.title("Data Look UP")
   # st.sidebar.header("Controls")
 
   # openai.api_key = os.getenv('OPENAI_API_KEY')
@@ -61,7 +61,7 @@ def main():
     "Select answer model:",
     ['curie', 'davinci', 'babbage', 'ada']
   )
-  st.subheader("What information would you like to know from the data? Ask away!")
+  st.subheader("What information would you like to look up? Ask away!")
   with st.form(key='my form'):
     mainQuestion = st.text_input(label = '', max_chars=128)
     submit_question = st.form_submit_button("Submit")
