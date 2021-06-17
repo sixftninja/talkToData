@@ -6,7 +6,7 @@ from information import *
 import json
 
 def main():
-  st.sidebar.title("Data Look UP")
+  st.sidebar.title("Data look-up")
   # st.sidebar.header("Controls")
 
   # openai.api_key = os.getenv('OPENAI_API_KEY')
