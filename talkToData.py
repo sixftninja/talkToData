@@ -9,7 +9,8 @@ def main():
   st.sidebar.title("Talk to your data!")
   # st.sidebar.header("Controls")
 
-  api_key = os.getenv('OPENAI_API_KEY')
+  # openai.api_key = os.getenv('OPENAI_API_KEY')
+  openai.api_key = st.secrets["OPENAI_API_KEY"]
 
   df1 = pd.read_excel("test_data.xlsx")
   df2 = pd.read_excel("test_data2.xlsx")
