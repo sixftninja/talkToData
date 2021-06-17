@@ -1,11 +1,6 @@
-
-from logging import PlaceHolder
 import os
-import requests
-from typing import get_type_hints
 import openai
 import pandas as pd
-import numpy as np
 import streamlit as st
 from information import *
 import json
