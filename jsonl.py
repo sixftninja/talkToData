@@ -5,12 +5,12 @@ import pandas as pd
 from tabulate import tabulate
 
 def get_data_from_excel():
-    xls = pd.read_excel('test_data.xlsx')
+    xls = pd.read_excel('WEO_Data.xls')
     data = xls.to_dict(orient='records')
     return data
 
 def write_json_lines(data):
-    with open('testData1.JSONL', 'wb') as f:
+    with open('G7Economics.JSONL', 'wb') as f:
         writer = jsonlines.Writer(f)
         for line in data:
             line = {"text": line}
